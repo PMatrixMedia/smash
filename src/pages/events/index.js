@@ -2,6 +2,7 @@ import { useQuery, gql } from "@apollo/client";
 import { useHistory } from "react-router-dom";
 import { Container, Row, Col, Spinner } from "react-bootstrap";
 
+import { Header } from "./../../component/header";
 import { EventTile } from "./../../component/eventTile";
 import styles from "./styles.module.scss";
 
@@ -49,7 +50,11 @@ export const Events = () => {
     push({ pathname: `eventDetails/${id}`, state: { slug } });
   };
   return (
+
     <div className={styles.container}>
+      <div className={styles.mainContainer}>
+        <Header/>
+      </div>
       <div className={styles.titleContainer}>
         <p className={styles.title}>Tournaments</p>
         <p className={styles.bred}>Home / Tournaments</p>

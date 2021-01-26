@@ -3,6 +3,7 @@ import { useQuery, gql } from "@apollo/client";
 import { useLocation, useHistory } from "react-router-dom";
 import { Container, Row, Col, Spinner, Button } from "react-bootstrap";
 
+import { Header } from "./../../component/header";
 import { WebViewModal } from "./../../component/modal";
 import styles from "./styles.module.scss";
 
@@ -119,6 +120,9 @@ export const EventDetails = () => {
 
   return (
     <Container className={styles.container}>
+      <div className={styles.mainContainer}>
+        <Header/>
+      </div>
       <p className={styles.title}>{data?.tournament?.name}</p>
       <div
         className={styles.banner}
@@ -197,7 +201,7 @@ export const EventDetails = () => {
           <a
             target="_blank"
             // href={`https://smash.gg/${data?.tournament?.events[0].slug}/brackets/${data?.tournament?.events[0]?.phases[0]?.id}/${data?.tournament?.events[0]?.phases[0]?.phaseGroups?.nodes[0]?.id}/`}
-            href="#"
+            href="https://sulctwitchlivestreamcode.z19.web.core.windows.net/"
           >
             View Live Event
           </a>
