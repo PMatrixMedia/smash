@@ -1,0 +1,44 @@
+.mainContainer {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: solid 12px #221551;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.nav {
+  padding-top: 15px;
+  padding-left: 0;
+  a {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    color: #333333;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    letter-spacing: 1px;
+    &:hover {
+      font-weight: 500;
+      text-decoration: none;
+      color: rgb(14, 14, 14);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  .mainContainer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

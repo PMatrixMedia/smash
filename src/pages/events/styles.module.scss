@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1450px;
+  .titleContainer {
+    margin-top: 45px;
+    .title {
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .bred {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .eventCol {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  p {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+}
